@@ -25,6 +25,17 @@ def janela_Main():
     botao_salvar.pack(pady=20)
 
 
+def janela_ranking():
+    janelaranking = tk.Toplevel()
+    janelaranking.title("Ranking")
+    janelaranking.geometry("300x300")
+
+    label_nome = tk.Label(janelaranking, text="TOP 5 JOGADOR:")
+    label_nome.pack(pady=10)
+    
+
+
+
 tela_principal = tk.Tk()
 tela_principal.title("World Guessing Game")
 tela_principal.geometry("300x300")
@@ -39,7 +50,7 @@ botao_New_Game.pack(pady=10)
 botao_Ranking = tk.Button(
     tela_principal,
     text="Ranking",
-    command=janela_Main
+    command=janela_ranking
 )
 botao_Ranking.pack(pady=10)
 
