@@ -1,43 +1,48 @@
-# 🌍 World Guessing Game – Ranking Edition
+# 🌎 World Guessing Game – Ranking Edition
+Projeto educacional desenvolvido em Python que aplica Programação Orientada a Objetos (POO) e arquitetura MVC. O jogo consome uma API externa para desafiar o usuário a descobrir países através de dicas progressivas (Região, Capital e Bandeira), com sistema de pontuação e ranking global.
 
-Projeto educacional em Python que aplica Programação Orientada a Objetos (POO) integrando API, bibliotecas, banco de dados e interface gráfica.
-O jogador deve adivinhar o país correto com base em uma dica, competir por pontuação e entrar no ranking.
+## 🚀 Tecnologias Utilizadas
 
-## 🎯 Objetivo do Projeto
+- Linguagem: **Python 3.13+**
 
-### Demonstrar domínio prático dos 4 pilares da POO e integração entre:
+- Interface Gráfica: **Tkinter (Nativa)**
 
-Consumo de API externa
+- Banco de Dados: **SQLite3**
 
-Uso de bibliotecas padrão do Python
+- Integração API: **Requests (REST Countries API)**
 
-Persistência de dados com SQLite
+- Processamento de Imagem: **Base64**
 
-Interface gráfica com Tkinter
+- Lógica: **Math & Random**
 
-Projeto desenvolvido com foco em organização, clareza e maturidade técnica.
+## 📋 Pré-requisitos
+### Antes de começar, você precisa ter instalado na sua máquina:
 
-## 🧠 Como o Jogo Funciona
+1. **Python 3.x** (obrigatório marcar "Add to PATH" na instalação).
 
-- O sistema sorteia um país aleatório usando uma API pública.
+2. **VS Code** (Editor recomendado).
 
-- Uma dica é exibida (capital do país).
+3. **Conexão com Internet** (necessária para baixar os dados da API na primeira execução).
 
-- O jogador digita o nome do país.
+## 🔧 Passo a Passo de Instalação
+### 1. Clonar ou Baixar o Projeto
+Abra o terminal na pasta onde deseja salvar o projeto:
+```bash
+git clone https://github.com/lkaua-dev/World-Guessing-Game.git
+```
+### 2. Instalar Dependências
+A maioria das bibliotecas (Tkinter, SQLite, Math) já vem com o Python. Você só precisa instalar a biblioteca de requisições. No terminal, execute:
+```bash
+pip install requests
+```
+## ▶️ Como Rodar o Projeto
+### Abra o terminal na pasta raiz do projeto.
 
-- O tempo de resposta é calculado.
+ Execute o arquivo principal:
+```bash
+# Entre na pasta correta
+cd World-Guessing-Game
 
-- A pontuação é gerada com base no tempo e dificuldade.
-
-- O resultado é salvo no banco de dados.
-
-- O ranking com os Top 5 jogadores é atualizado em tempo real.
-
-## 🧩 Tecnologias Utilizadas
-
-1. **Python 3**
-2. **Tkinter** – Interface gráfica
-3. **SQLite3** – Banco de dados local
-4. **Requests** – Consumo da API
-5. **Math** – Cálculo de pontuação
-6. **Datetime** – Controle de tempo
+# Inicie o jogo
+python main.py
+```
